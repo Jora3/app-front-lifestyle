@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- servlet commentaires -->
+    <servlet>
+        <servlet-name>CommentairesServlet</servlet-name>
+        <servlet-class>servlets.CommentairesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CommentairesServlet</servlet-name>
+        <url-pattern>/Commentaires</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet publication-produit -->
+    <servlet>
+        <servlet-name>PublicationProduitServlet</servlet-name>
+        <servlet-class>servlets.PublicationProduitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PublicationProduitServlet</servlet-name>
+        <url-pattern>/PublierProduit</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet produit -->
+    <servlet>
+        <servlet-name>ProduitServlet</servlet-name>
+        <servlet-class>servlets.ProduitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProduitServlet</servlet-name>
+        <url-pattern>/Produit</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet ajax.sousCategories -->
+    <servlet>
+        <servlet-name>SCByCategorieServlet</servlet-name>
+        <servlet-class>servlets.ajax.SCByCategorieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SCByCategorieServlet</servlet-name>
+        <url-pattern>/Ajax/SousCategories</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet produits -->
+    <servlet>
+        <servlet-name>ProduitsServlet</servlet-name>
+        <servlet-class>servlets.ProduitsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProduitsServlet</servlet-name>
+        <url-pattern>/Produits</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet publications -->
+    <servlet>
+        <servlet-name>PublicationsServlet</servlet-name>
+        <servlet-class>servlets.PublicationsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PublicationsServlet</servlet-name>
+        <url-pattern>/Publications</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet logout -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlets.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet actualites -->
+    <servlet>
+        <servlet-name>ActualitesServlet</servlet-name>
+        <servlet-class>servlets.ActualitesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ActualitesServlet</servlet-name>
+        <url-pattern>/Actualites</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet signin -->
+    <servlet>
+        <servlet-name>SigninServlet</servlet-name>
+        <servlet-class>servlets.SigninServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SigninServlet</servlet-name>
+        <url-pattern>/Signin</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet login -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+</web-app>
